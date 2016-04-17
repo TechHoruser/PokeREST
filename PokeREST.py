@@ -60,6 +60,7 @@ class MiListaGen(Resource):
 				MILISTA.append(e)
 		
 	def delete(self, gen):
+		global MILISTA
 		args = parser.parse_args()
 		laux = []
 		for e in MILISTA:
@@ -83,6 +84,7 @@ class MiListaNum(Resource):
 				MILISTA.append(e)
 		
 	def delete(self, num):
+		global MILISTA
 		args = parser.parse_args()
 		laux = []
 		for e in MILISTA:
